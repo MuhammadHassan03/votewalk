@@ -27,8 +27,8 @@ export default function StatesIndex() {
           </thead>
           <tbody>
             {STATES.map((s) => (
-              <tr key={s.slug} className="border-b border-line last:border-0 hover:bg-mint/40">
-                <th scope="row" className="p-3 text-left font-semibold"><Link href={`/states/${s.slug}`} className="text-teal hover:underline">{s.name}</Link></th>
+              <tr key={s.slug} className="border-b border-line last:border-0 hover:bg-surface-2">
+                <th scope="row" className="p-3 text-left font-semibold"><Link href={`/states/${s.slug}`} className="font-semibold text-accent hover:underline">{s.name}</Link></th>
                 <td className="p-3">{s.regDate}</td>
                 <td className="p-3">{s.sameDay ? "Yes" : "No"}</td>
                 <td className="p-3">{ID_LABEL[s.idRule]}</td>
